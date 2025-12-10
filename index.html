@@ -9,22 +9,20 @@
   <script src="https://cdn.elastic.co/agents/rum/v5/latest/elastic-apm-rum.umd.min.js"></script>
 
   <script>
-    elasticApm.init({
-      serviceName: "rum-test",
-      serviceVersion: "1.0.0",
-      serverUrl: "https://my-deployment-77c181.apm.us-central1.gcp.cloud.es.io"
-",
+  elasticApm.init({
+    serviceName: "rum-test",
+    serviceVersion: "1.0.0",
+    serverUrl: "https://my-deployment-77c181.apm.us-central1.gcp.cloud.es.io",
 
-      // Optional: capture details
-      environment: "production",
-      pageLoadTransactionName: "rum-test-home",
+    environment: "production",
+    pageLoadTransactionName: "rum-test-home",
 
-      // Highly recommended
-      active: true,
-      distributedTracingOrigins: ["*"],
-      propagateTracestate: true
-    });
-  </script>
+    active: true,
+    distributedTracingOrigins: ["*"],
+    propagateTracestate: true
+  });
+</script>
+
 </head>
 <body>
   <h1>Elastic RUM Test Page</h1>
